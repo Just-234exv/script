@@ -1,65 +1,12 @@
-.krona {
-  font-family: 'Krona One', sans-serif;
-}
+    .krona { font-family: 'Krona One', sans-serif; }
+    .onest { font-family: 'Onest', sans-serif; }
 
-.onest {
-  font-family: 'Onest', sans-serif;
-}
+    .checkbox-wrapper input { opacity: 0; position: absolute; }
+    .cbx span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.3s ease; }
+    .cbx span svg { stroke: #00A4E2; stroke-width: 2; stroke-dasharray: 16; stroke-dashoffset: 16; transition: stroke-dashoffset 0.3s ease; }
+    .cbx div { width: 60px; height: 60px; background-color: rgba(63,63,70,0.5); position: absolute; border-radius: 9999px; transform: rotate(45deg); top: -52px; left: -52px; visibility: hidden; opacity: 0; transition: all 0.3s ease; }
 
-.checkbox-wrapper input {
-  opacity: 0;
-  position: absolute;
-}
-
-.cbx span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-.cbx span svg {
-  stroke: #00A4E2;
-  stroke-width: 2;
-  stroke-dasharray: 16;
-  stroke-dashoffset: 16;
-  transition: stroke-dashoffset 0.3s ease;
-}
-
-.cbx div {
-  width: 60px;
-  height: 60px;
-  background-color: rgba(63, 63, 70, 0.5);
-  position: absolute;
-  border-radius: 9999px;
-  transform: rotate(45deg);
-  top: -52px;
-  left: -52px;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-#ch1:checked + .cbx {
-  border-color: #00A4E2;
-  box-shadow: 0 0 0 2px #00A4E2;
-}
-
-#ch1:checked + .cbx span {
-  visibility: visible;
-  opacity: 1;
-}
-
-#ch1:checked + .cbx span svg {
-  stroke-dashoffset: 0;
-}
-
-#ch1:checked + .cbx div {
-  top: -10px;
-  left: -10px;
-  visibility: visible;
-  opacity: 1;
-}
+    #ch1:checked + .cbx { border-color: #00A4E2; box-shadow: 0 0 0 2px #00A4E2; }
+    #ch1:checked + .cbx span { visibility: visible; opacity: 1; }
+    #ch1:checked + .cbx span svg { stroke-dashoffset: 0; }
+    #ch1:checked + .cbx div { top: -10px; left: -10px; visibility: visible; opacity: 1; }
